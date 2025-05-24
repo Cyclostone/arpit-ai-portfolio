@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://rishikgupta.github.io/rishiktech-portfolio",
+  "name": "arpit-portfolio",
+  "homepage": "https://cyclostone.github.io/arpit-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && echo rishik.dev > dist/CNAME",
+    "predeploy": "npm run build && echo arpitshrotriya.dev > dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

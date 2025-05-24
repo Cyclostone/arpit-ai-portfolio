@@ -1,108 +1,115 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import {
-  FaReact,
-  FaNodeJs,
   FaPython,
-  FaJava,
-  FaStripe,
+  FaAws,
   FaGithub,
-  FaFigma,
+  FaDatabase,
+  FaCode,
 } from "react-icons/fa";
 
 import {
-  SiMongodb,
-  SiExpress,
+  SiTensorflow,
+  SiPytorch,
+  SiStreamlit,
   SiJupyter,
   SiScikitlearn,
   SiPandas,
-  SiTailwindcss,
+  SiNumpy,
+  SiOpenai,
+  SiHuggingface,
+  SiGooglecloud,
+  SiFlask,
+  SiDocker,
 } from "react-icons/si";
 
 const techIcons = {
-  React: <FaReact />,
-  "Node.js": <FaNodeJs />,
-  "Express.js": <SiExpress />,
-  MongoDB: <SiMongodb />,
   Python: <FaPython />,
-  Stripe: <FaStripe />,
-  Figma: <FaFigma />,
+  TensorFlow: <SiTensorflow />,
+  PyTorch: <SiPytorch />,
+  Streamlit: <SiStreamlit />,
   Jupyter: <SiJupyter />,
-  Pandas: <SiPandas />,
   "Scikit-learn": <SiScikitlearn />,
-  TailwindCSS: <SiTailwindcss />,
+  Pandas: <SiPandas />,
+  NumPy: <SiNumpy />,
+  AWS: <FaAws />,
+  "Google Cloud": <SiGooglecloud />,
+  Flask: <SiFlask />,
+  Docker: <SiDocker />,
+  "HuggingFace": <SiHuggingface />,
+  OpenAI: <SiOpenai />,
+  SQL: <FaDatabase />,
 };
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Beaded Muse (Capstone Project)",
+      title: "Search Engine with LLM",
       description:
-        "Developed a complete Admin Panel for a MERN stack-based e-commerce platform. Implemented secure Stripe payments, GST calculation, responsive UI/UX, and real-time order/product management.",
+        "Architected an AI research assistant utilizing Streamlit and LangChain, enabling natural language searches across ArXiv, Wikipedia, and web content. Reduced research time for data scientists by 30% through intelligent semantic search capabilities.",
       tech: [
-        "React",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Stripe",
-        "Jira",
-        "Figma",
+        "Python",
+        "Streamlit",
+        "HuggingFace",
+        "LangChain",
+        "OpenAI",
+        "Google Cloud",
       ],
       links: [
         {
-          label: "🔗 Admin Panel (Live)",
-          href: "https://beadedmuseadmin.netlify.app/",
+          label: "🔗 Live Demo",
+          href: "https://github.com/cyclostone/search-engine-with-llm",
         },
         {
-          label: "🔗 Customer Panel (Live)",
-          href: "https://beaded-muse-w32x.vercel.app/",
-        },
-      ],
-    },
-    {
-      title: "Length of Stay Classification",
-      description:
-        "Built a predictive system to classify patient hospital stay duration using a dataset of 300,000 records. Handled data cleaning, pre-processing, and model training for performance optimization.",
-      tech: ["Python", "Pandas", "Scikit-learn", "Jupyter", "ML"],
-      links: [
-        {
-          label: "💻 GitHub - Jupyter Notebook",
-          href: "https://github.com/RishikGupta/Classification-Of-LOS-Of-Patients",
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/search-engine-with-llm",
         },
       ],
     },
     {
-      title: "Hepatitis A Predictor",
+      title: "Customer Churn Prediction",
       description:
-        "Engineered an ensemble machine learning model by combining Linear Regression, SVR, and ARIMA based on error metrics to improve predictive accuracy for medical datasets.",
-      tech: ["Python", "Scikit-learn", "Pandas", "Regression Models", "ARIMA"],
+        "Developed and deployed an interactive churn prediction tool using TensorFlow and Streamlit, empowering business users to forecast churn risk with 95% accuracy based on user behavior patterns. Implemented a user-friendly interface for non-technical stakeholders.",
+      tech: ["Python", "TensorFlow", "Streamlit", "Scikit-learn", "Pandas", "NumPy"],
       links: [
         {
-          label: "💻 GitHub - Jupyter Notebook",
-          href: "https://github.com/RishikGupta/Hepatitis-A-Prediction",
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/customer-churn-prediction",
         },
       ],
     },
     {
-      title: "Motor Skills Analysis",
+      title: "NLP Pipeline for Text Classification",
       description:
-        "Conducted ML-based motor skill analysis using Python libraries like NumPy, pandas, Matplotlib, and Seaborn. Collaborated with a team to analyze and visualize patterns.",
-      tech: ["Python", "NumPy", "Seaborn", "Data Analysis", "ML"],
+        "Constructed and optimized a large-scale NLP pipeline for text classification and sentiment analysis that achieved an 85% accuracy rate on production data. Showcased applied Deep Learning techniques and built a scalable solution that processes millions of records daily.",
+      tech: ["Python", "TensorFlow", "PyTorch", "BERT", "AWS", "Docker"],
       links: [
         {
-          label: "💻 GitHub - Jupyter Notebooks",
-          href: "https://github.com/RishikGupta/Analysis-of-Motor-Skills",
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/nlp-classification-pipeline",
         },
       ],
     },
     {
-      title: "Road Crack Detection",
+      title: "LLM-Powered Chatbot System",
       description:
-        "Built a deep learning model for detecting road cracks using MATLAB and image processing techniques. Achieved 96% classification accuracy through object detection and feature extraction.",
-      tech: ["MATLAB", "Image Processing", "Object Detection", "Deep Learning"],
+        "Developed and launched three distinct LLM-powered chatbots by integrating Gemini APIs and fine-tuning BERT models, effectively addressing 65% of basic customer support inquiries. Demonstrated proficiency in Natural Language Processing and Large Language Models.",
+      tech: ["Python", "HuggingFace", "TensorFlow", "Flask", "AWS", "Docker"],
       links: [
         {
-          label: "💻 GitHub - Machine Learning Code",
-          href: "https://github.com/RishikGupta/Road-Crack-Detection",
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/llm-chatbot-system",
+        },
+      ],
+    },
+    {
+      title: "Salary Estimator Dashboard",
+      description:
+        "Developed an interactive salary estimation dashboard using Streamlit, enabling users to input skills and experience for instant salary projections. Achieved high user satisfaction rating of 4.8/5 stars through intuitive design and accurate predictions.",
+      tech: ["Python", "Streamlit", "Scikit-learn", "Pandas", "NumPy", "SHAP"],
+      links: [
+        {
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/salary-estimator",
         },
       ],
     },
@@ -115,7 +122,7 @@ export const Projects = () => {
     >
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
-          Featured Projects
+          Featured AI/ML Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (

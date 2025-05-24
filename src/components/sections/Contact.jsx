@@ -30,8 +30,11 @@ export const Contact = () => {
       <RevealOnScroll>
         <div className="px-4 w-screen max-w-3xl mx-auto sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-8 gradient-accent text-center">
-            Get In Touch
+            Connect With Me
           </h2>
+          <p className="text-muted text-lg mb-8 max-w-2xl mx-auto">
+            I'm currently open to AI/ML Engineer roles at innovative companies. If you're looking for someone who can build intelligent systems that solve real business problems, let's talk!
+          </p>
           <form className="space-y-6" onSubmit={handleSubmit}>
             {/* Name */}
             <RevealOnScroll>
@@ -77,7 +80,7 @@ export const Contact = () => {
                   required
                   value={formData.message}
                   rows={5}
-                  placeholder="Your Message..."
+                  placeholder="Tell me about your AI/ML opportunity or project..."
                   className="relative w-full bg-card text-theme placeholder-muted px-4 py-3 rounded-lg border border-theme focus:outline-none resize-none"
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 />
