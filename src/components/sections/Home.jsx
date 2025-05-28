@@ -13,16 +13,14 @@ export const Home = () => {
         </h1>
 
         <p className="text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto text-muted">
-          I'm an <strong>AI/ML Engineer</strong> with{" "}
-          <strong>3+ years of experience</strong> designing and deploying NLP models and LLM-powered chatbots using Python and cloud technologies. I've demonstrated success in{" "}
-          <strong>reducing processing times by 40%</strong> and{" "}
-          <strong>resolving 65% of customer inquiries</strong> via automated systems.
+          I'm an <strong>AI/ML & Data Engineer</strong> with{" "}
+          <strong>3+ years of experience</strong> and currently <strong>pursuing my M.S. in Computer Science at NJIT</strong>. I architect <strong>end-to-end ETL pipelines</strong> and manage <strong>relational and NoSQL databases</strong> to ingest, clean, and transform <strong>millions of records daily</strong>.
           <br />
           <br />
-          My expertise spans <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Deep Learning</strong> with proficiency in frameworks like <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Streamlit</strong>, and <strong>HuggingFace Transformers</strong>. I've built and fine-tuned <strong>BERT models</strong> and integrated <strong>Gemini APIs</strong> to create intelligent solutions.
+          Leveraging <strong>Python</strong>, <strong>SQL</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, and cloud platforms (<strong>AWS/GCP/Azure</strong>), I build <strong>scalable ML-powered APIs</strong> and <strong>AI applications</strong>—powered by <strong>LangChain</strong> and <strong>FastAPI</strong>—complete with centralized logging, error reporting, snapshot backups, and automated monitoring.
           <br />
           <br />
-          From developing <strong>large-scale NLP pipelines</strong> with 85% accuracy to engineering <strong>scalable data systems</strong> that automate ML record integration, I transform complex data challenges into elegant, production-ready solutions that drive business value.
+          My mission is to deliver <strong>robust, maintainable systems</strong> that turn complex data into <strong>actionable intelligence at scale</strong>.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -53,7 +51,7 @@ export const Home = () => {
           </a>
 
           <a
-            href="/Rishik_Gupta_Developer_Resume.pdf"
+            href="/Arpit_Shrotriya_CV_2025_mk7.pdf"
             download
             className="border border-blue-500 text-blue-50
  py-3 px-6 rounded font-medium flex items-center gap-2 text-theme hover:bg-blue-500 transition"

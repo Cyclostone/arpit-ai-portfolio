@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaDatabase,
   FaCode,
+  FaRust,
 } from "react-icons/fa";
 
 import {
@@ -35,6 +36,10 @@ const techIcons = {
   "Google Cloud": <SiGooglecloud />,
   Flask: <SiFlask />,
   Docker: <SiDocker />,
+  Rust: <FaRust />,
+  LangChain: <FaCode />,
+  "Groq API": <FaCode />,
+  "Wikipedia API": <FaDatabase />,
   "HuggingFace": <SiHuggingface />,
   OpenAI: <SiOpenai />,
   SQL: <FaDatabase />,
@@ -43,73 +48,113 @@ const techIcons = {
 export const Projects = () => {
   const projects = [
     {
-      title: "Search Engine with LLM",
+      title: "Rusty-Playground",
       description:
-        "Architected an AI research assistant utilizing Streamlit and LangChain, enabling natural language searches across ArXiv, Wikipedia, and web content. Reduced research time for data scientists by 30% through intelligent semantic search capabilities.",
+        "A step-by-step adventure through Rust programming with practical mini-projects. Follow along as I build small applications from simple calculators to more complex systems, documenting my learning process.",
+      tech: [
+        "Rust"
+      ],
+      links: [
+        {
+          label: "💻 GitHub Repository",
+          href: "https://github.com/cyclostone/Rusty-Playground",
+        },
+      ],
+    },
+    {
+      title: "MathSolveX",
+      description:
+        "An intelligent, AI-powered mathematical problem-solving assistant built with Streamlit and LangChain. Helps users solve complex math problems with step-by-step explanations and visualizations.",
       tech: [
         "Python",
         "Streamlit",
-        "HuggingFace",
         "LangChain",
-        "OpenAI",
-        "Google Cloud",
+        "Groq API",
+        "Wikipedia API",
       ],
       links: [
         {
-          label: "🔗 Live Demo",
-          href: "https://github.com/cyclostone/search-engine-with-llm",
-        },
-        {
           label: "💻 GitHub Repository",
-          href: "https://github.com/cyclostone/search-engine-with-llm",
+          href: "https://github.com/cyclostone/MathSolveX",
         },
       ],
     },
     {
-      title: "Customer Churn Prediction",
+      title: "AI Research Assistant",
       description:
-        "Developed and deployed an interactive churn prediction tool using TensorFlow and Streamlit, empowering business users to forecast churn risk with 95% accuracy based on user behavior patterns. Implemented a user-friendly interface for non-technical stakeholders.",
-      tech: ["Python", "TensorFlow", "Streamlit", "Scikit-learn", "Pandas", "NumPy"],
+        "A powerful AI-powered research assistant that combines ArXiv papers, Wikipedia articles, and web search capabilities to help you explore and understand complex topics. Features natural conversation interface with streaming responses and a clean, intuitive UI.",
+      tech: [
+        "Python", 
+        "Streamlit", 
+        "LangChain", 
+        "Groq API", 
+        "Wikipedia API",
+        "ArXiv Integration"
+      ],
       links: [
         {
           label: "💻 GitHub Repository",
-          href: "https://github.com/cyclostone/customer-churn-prediction",
+          href: "https://github.com/cyclostone/Search-Engine-With-LLM",
         },
       ],
     },
     {
-      title: "NLP Pipeline for Text Classification",
+      title: "Customer Churn Prediction App",
       description:
-        "Constructed and optimized a large-scale NLP pipeline for text classification and sentiment analysis that achieved an 85% accuracy rate on production data. Showcased applied Deep Learning techniques and built a scalable solution that processes millions of records daily.",
-      tech: ["Python", "TensorFlow", "PyTorch", "BERT", "AWS", "Docker"],
+        "A machine learning-powered application for predicting customer churn using a custom-trained Artificial Neural Network model. This project demonstrates the efficient use of serialized model components to enhance reusability and deployment, offering an interactive interface via Streamlit for real-time predictions and data-driven decision-making.",
+      tech: [
+        "Python", 
+        "Jupyter", 
+        "TensorFlow", 
+        "Streamlit", 
+        "Scikit-learn", 
+        "Pandas"
+      ],
       links: [
+        // {
+        //   label: "🚀 Live Demo",
+        //   href: "https://customerchuurnpredictionapp-6bsrwlk337ypfmya.streamlit.app/",
+        // },
         {
           label: "💻 GitHub Repository",
-          href: "https://github.com/cyclostone/nlp-classification-pipeline",
+          href: "https://github.com/cyclostone/Customer_Churn_Prediction_App",
         },
       ],
     },
     {
-      title: "LLM-Powered Chatbot System",
+      title: "Skill Recommender With Azure Open AI",
       description:
-        "Developed and launched three distinct LLM-powered chatbots by integrating Gemini APIs and fine-tuning BERT models, effectively addressing 65% of basic customer support inquiries. Demonstrated proficiency in Natural Language Processing and Large Language Models.",
-      tech: ["Python", "HuggingFace", "TensorFlow", "Flask", "AWS", "Docker"],
+        "A simple yet intuitive application which takes resume and dream job title, extracts skills from resume and compares them with trending skills from the current market and recommends the skills needed to achieve that dream job title. Uses Azure OpenAI API and YouTube Data API to generate recommendations.",
+      tech: [
+        "Python", 
+        "Flask", 
+        "TensorFlow", 
+        "Azure",
+        "YouTube API"
+      ],
       links: [
         {
           label: "💻 GitHub Repository",
-          href: "https://github.com/cyclostone/llm-chatbot-system",
+          href: "https://github.com/cyclostone/skill_recommender_with_azure",
         },
       ],
     },
     {
-      title: "Salary Estimator Dashboard",
+      title: "Zomato Data Analysis",
       description:
-        "Developed an interactive salary estimation dashboard using Streamlit, enabling users to input skills and experience for instant salary projections. Achieved high user satisfaction rating of 4.8/5 stars through intuitive design and accurate predictions.",
-      tech: ["Python", "Streamlit", "Scikit-learn", "Pandas", "NumPy", "SHAP"],
+        "This project analyzes restaurant data from multiple countries to provide insights and recommendations for opening new restaurants and improving existing ones. The Excel dashboard analyzes Zomato Historical Data and suggests untapped markets based on a plethora of parameters, providing insights into restaurant performance, customer preferences, and market opportunities.",
+      tech: [
+        "Excel",
+        "NumPy",
+        "Data Analysis",
+        "Python", 
+        "SQL", 
+        "Pandas", 
+      ],
       links: [
         {
           label: "💻 GitHub Repository",
-          href: "https://github.com/cyclostone/salary-estimator",
+          href: "https://github.com/cyclostone/Zomato-Data-Analysis",
         },
       ],
     },

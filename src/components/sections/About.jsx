@@ -94,10 +94,13 @@ export const About = () => {
 
         <div className="rounded-xl p-8 border border-white/10 shadow-lg bg-section text-center">
           <p className="text-muted text-lg mb-6 leading-relaxed">
-            As an <strong>AI/ML Engineer</strong> with a solid foundation in Computer Science, I've developed and deployed <strong>LLM-powered chatbots</strong> that successfully resolved <strong>65% of customer inquiries</strong> and reduced processing times by <strong>40%</strong>. My work spans from fine-tuning <strong>BERT models</strong> to integrating <strong>Gemini APIs</strong> for intelligent solutions.
+            I thrive at the nexus of <strong>data engineering</strong> and <strong>AI innovation</strong>. Beyond building <strong>production ETL workflows</strong> and designing <strong>resilient databases</strong>, I craft <strong>end-user tools</strong>—from <strong>conversational AI assistants</strong> to <strong>analytics dashboards</strong>—using modern frameworks like <strong>Streamlit</strong> and <strong>LangChain</strong>.
           </p>
           <p className="text-muted text-lg mb-6 leading-relaxed">
-            I've built <strong>large-scale NLP pipelines</strong> achieving <strong>85% accuracy</strong> on production data and engineered <strong>scalable data systems</strong> using Python, SQL, and AWS. My experience includes developing <strong>interactive ML applications</strong> with Streamlit and TensorFlow, creating solutions that transform complex data challenges into business value.
+            I design every solution with <strong>scalability</strong> in mind, integrating <strong>CI/CD</strong>, <strong>observability</strong>, and <strong>fault-tolerance</strong> so teams can trust and extend my work. When I'm not coding, you'll find me contributing to <strong>open-source</strong>, mentoring peers in mock interviews and data literacy, or recharging with a swim or bike ride.
+          </p>
+          <p className="text-muted text-lg mb-6 leading-relaxed">
+            My aim is simple: to empower organizations with <strong>AI-driven insights</strong> and <strong>automation</strong> that fuel growth and positive impact.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -135,6 +138,25 @@ export const About = () => {
               </div>
             </RevealOnScroll>
           </div>
+          
+          <div className="mt-6">
+            <RevealOnScroll>
+              <div className="rounded-xl p-6 border hover:border-blue-500 transition-all">
+                <h3 className="text-xl font-bold mb-4 text-theme">DevOps & Web Development</h3>
+                <div className="flex flex-wrap gap-2">
+                  {devOpsSkills.map(({ label, icon }, key) => (
+                    <span
+                      key={key}
+                      className="flex items-center gap-2 bg-badge text-badge py-1.5 px-4 rounded-full transition duration-200 hover:bg-badge-hover hover:text-white hover:shadow-accent shadow-sm"
+                    >
+                      {icon && <span className="text-lg">{icon}</span>}
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </RevealOnScroll>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -146,7 +168,7 @@ export const About = () => {
               <ul className="list-inside text-theme space-y-2">
                 <li>
                   <h4 className="font-semibold text-theme">
-                    <strong>M.S. Computer Science</strong> -
+                    <strong>M.S. in Computer Science</strong> -
                     New Jersey Institute of Technology
                     <span className="block text-accent italic">
                       Sep 2024 - May 2026
@@ -157,28 +179,23 @@ export const About = () => {
                     Relevant Coursework:
                   </p>
                   <ul className="list-disc list-inside ml-5 mt-1 text-muted font-medium italic">
+                    <li>Data Structures & Algorithms</li>
+                    <li>Reinforcement Learning</li>
                     <li>Machine Learning</li>
+                    <li>Intro To Big Data</li>
                     <li>Data Management System Design</li>
                     <li>Data Mining</li>
-                    <li>Natural Language Processing</li>
-                    <li>Deep Learning</li>
-                    <li>Computer Vision</li>
-                    <li>Big Data Analytics</li>
-                    <li>Cloud Computing</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Advanced Algorithms</li>
-                    <li>Distributed Systems</li>
                   </ul>
                 </li>
                 <li>
                   <h4 className="font-semibold text-theme">
-                    <strong>B.Tech in Computer Science</strong> - Harrison, New Jersey
+                    <strong>B.Tech in Computer Science</strong> - Guru Gobind Singh Indraprastha University
                     <span className="block text-accent italic">
                       Aug 2017 - Sep 2021
                     </span>
                   </h4>
                   <p>
-                    <strong>CGPA - 7.46 / 10.00</strong>
+                    <strong>CGPA - 7.69 / 10.00</strong>
                   </p>
                   <p className="ml-5 mt-1 text-muted font-bold">
                     Relevant Coursework:
@@ -202,7 +219,7 @@ export const About = () => {
                     <li>Computer Graphics and Multimedia</li>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   <h4 className="font-semibold text-theme">
                     <strong>Senior Secondary School Certificate</strong> -
                     Springdales School
@@ -224,7 +241,7 @@ export const About = () => {
                     <li>Chemistry</li>
                     <li>English</li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -239,7 +256,7 @@ export const About = () => {
               <div className="space-y-4 text-muted">
                 <div>
                   <h4 className="font-semibold text-theme">
-                    Associate Data Scientist - Vectra
+                    Associate Data Scientist - Veeyo Tech
                     <span className="block text-accent italic">
                       Jul 2023 - Aug 2024
                     </span>
@@ -257,7 +274,7 @@ export const About = () => {
 
                 <div>
                   <h4 className="font-semibold text-theme">
-                    Data Engineer - Sial Analytics
+                    Data Engineer - Sail Analytics
                     <span className="block text-accent italic">
                       Jun 2022 - Jun 2023
                     </span>
